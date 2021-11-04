@@ -1,0 +1,229 @@
+*{box-sizing: border-box;}
+$coleur-primaire : #9356DC;
+$coleur-secondaire : #FF79DA;
+$couleur-tertiaire : #99E2D0 ;
+$font-logo-titres : 'Shrikhand', cursive;
+$font-texte : 'Roboto', sans-serif;
+body ,h1, h2, h3, h4, h5, h6, p,i,a {
+    margin: 0;
+     padding:0;
+     text-decoration: none;
+    }
+    a:visited {
+       color: black;
+
+    }
+    // header //
+header {
+    display: grid;
+     grid-template-columns: 20% 70%;
+      align-items: center;
+      padding-top: 20px;
+      position: relative;
+
+
+   .titre_site {
+    font-family: $font-logo-titres;
+    font-size: 10vw;
+   
+    }
+.fa-arrow-left{
+    font-size:9vw;
+    padding-left: 15px;
+ }
+}
+  // Fin header //
+.photo_de_resto img { 
+    width: 100%;
+    object-fit: cover;
+    padding-top: 21px;
+}
+
+// MAIN //
+main {
+background-color: #eee;
+border-top-left-radius: 25px;
+border-top-right-radius: 25px;
+padding: 15px 15px;
+position: relative;
+top : -63px;
+
+.titre_menu {
+     font-family: $font-logo-titres;  
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .icon-coeur { 
+        position: relative;
+    .fa-heart {
+        font-size: 1.8rem;
+        }
+        .heart-two {
+            color: $coleur-primaire;
+            position: absolute;
+            left: 0;
+            visibility: hidden;
+        }
+        &:hover {
+            .heart-two {
+                visibility: visible;
+            }
+        }
+    }
+    }
+
+   
+
+}
+.menu {
+margin-top: 15px;
+.line { 
+    border : 2px solid $couleur-tertiaire;
+    width: 10%;
+    margin-left: 0px;
+    }
+}
+ 
+@for $i from 1 to 9 {
+    .box#{$i} {
+        animation: show-smooth 1s linear;
+        animation-delay: $i * 0.25s; }
+  }
+ .box {
+    background-color: white;
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    margin-top: 15px;
+    display: grid;
+    box-shadow: #ccc 5px 5px 5px;
+    height: 90px;
+    grid-template-columns: 60% 10% 10% 20%;
+    grid-template-rows: 50% 50%;
+    position: relative;
+     opacity: 0;
+     animation-fill-mode: forwards;
+
+    @keyframes show-smooth {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    .box h3 {
+        font-size: 16px;  
+         margin-bottom: 10px;
+          grid-column: 1/-1;
+          grid-row: 1;
+          height: 30px;
+          width: 100%;
+        }
+        .desc-plat {
+        grid-column: 1/4; 
+        grid-row: 2;
+        padding-top: 15px;
+        text-overflow: ellipsis;
+        overflow: hidden; 
+         white-space: nowrap;
+        width: 90%;
+        height: 35px;
+        margin-top: -4px;
+
+        }
+        .prix {
+         font-weight: bold;
+         grid-column: 4/-1; 
+         grid-row: 2;
+         padding-top: 1rem;
+         width: 100%;
+         margin-top: -4px;
+        }
+    .box-vert {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $couleur-tertiaire;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+        height: 90px;
+        width: 0%;
+        position: absolute;
+        right: 0;
+        transform: scale(1,1);
+        transition: all .5s;
+        .fa-check-circle {
+            visibility: hidden;
+             }
+            
+         }
+
+    &:hover {
+        cursor: pointer;
+        .desc-plat {
+            grid-column: 1/2; 
+
+        }
+        .prix{grid-column: 2/3;  }
+        .box-vert  {  
+            transform: scale(1,1);
+            width: 30%;}
+            .fa-check-circle {
+                visibility: visible;
+                transition: .5s;
+                transform: rotate(380deg);
+            }
+                
+    } 
+
+}
+
+.btn { 
+    border-radius: 10000px;
+    padding : 1rem;
+    background-image: linear-gradient(#9356DC,#FF79DA);
+    border : none;
+    color :white;
+    font-weight:bold;
+    font-size: 1rem;
+    padding-left: 50px;
+    text-align: center;
+    padding-right: 50px;
+    margin: 50px;
+     &:hover {
+        cursor: pointer;
+
+     }
+      }
+     .btn1 { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+     }
+// footer 
+
+footer {
+    background-color: rgba(black , 0.8);
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 7%;
+    padding-top:35px ;
+    padding-bottom:35px ;
+    font-size: 20px;
+    font-family: $font-texte;
+    margin-top: -63px
+    ;     
+    
+    .titre-site {
+        font-family: $font-logo-titres;
+        font-size: 28px;
+        padding-bottom: 20px;
+    }
+    .footer-item { 
+    padding-bottom:15px ; }
+    }

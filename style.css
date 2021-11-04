@@ -1,0 +1,284 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+header nav {
+  padding: 5px;
+  font-family: "Shrikhand", cursive;
+  font-size: 28px;
+}
+
+header .ville {
+  background-color: rgba(128, 128, 128, 0.3);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+}
+
+header .emplacement {
+  padding-left: 15px;
+}
+
+.reservation-menu {
+  background-color: rgba(128, 128, 128, 0.2);
+  font-family: "Roboto", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reservation-menu .reserver-titre {
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.reservation-menu .decouvrir {
+  font-weight: 100;
+  opacity: .5;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.reservation-menu .btn {
+  border-radius: 10000px;
+  padding: 1rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding-left: 50px;
+  text-align: center;
+  padding-right: 50px;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+
+.fonctionnement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  padding: 10%;
+}
+
+.fonctionnement .icon-fnct {
+  font-size: 30px;
+}
+
+.fonctionnement .btn-fnct {
+  background-color: rgba(128, 128, 128, 0.1);
+  border-radius: 555px;
+  padding: 30px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: relative;
+}
+
+.fonctionnement .btn-fnct:hover {
+  background-color: rgba(147, 86, 220, 0.2);
+}
+
+.fonctionnement .btn-fnct:hover .icon-fnct {
+  color: #9356DC;
+}
+
+.fonctionnement .btn-fnct::before {
+  content: "1";
+  background-color: #9356DC;
+  border-radius: 5555px;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  color: white;
+  position: absolute;
+  top: 25px;
+  left: -15px;
+  text-align: center;
+  line-height: 38px;
+}
+
+.list-restaurents {
+  background-color: rgba(128, 128, 128, 0.1);
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-top: 1rem;
+  font-family: "Roboto", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.list-restaurents .titre-restaurent {
+  font-weight: 800;
+  font-size: 1.4rem;
+  padding: 25px 0;
+}
+
+.list-restaurents .box {
+  width: 100%;
+  background-color: white;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  position: relative;
+  -webkit-box-shadow: 5px 9px 11px 6px #b2b2b2;
+          box-shadow: 5px 9px 11px 6px #b2b2b2;
+}
+
+.list-restaurents .box img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.list-restaurents .box .nouveau {
+  background-color: #55e455;
+  padding: 5px;
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  color: #227e22;
+}
+
+.list-restaurents .rest-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.list-restaurents .rest-description .nom-restaurent {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  padding-left: 5%;
+  font-weight: 900;
+  font-size: 19px;
+  padding-top: 15px;
+}
+
+.list-restaurents .rest-description .adresse-restaurent {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  padding-left: 5%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.list-restaurents .rest-description .icon-coeur {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  position: relative;
+  top: 19px;
+}
+
+.list-restaurents .rest-description .icon-coeur:hover .heart-two {
+  opacity: 1;
+}
+
+.list-restaurents .rest-description .fa-heart {
+  font-size: 28px;
+}
+
+.list-restaurents .rest-description .heart-two {
+  color: #9356DC;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 7%;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+footer .titre-site {
+  font-family: "Shrikhand", cursive;
+  font-size: 28px;
+  padding-bottom: 20px;
+}
+
+footer .footer-item {
+  padding-bottom: 15px;
+}
+/*# sourceMappingURL=style.css.map */
