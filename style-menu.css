@@ -149,6 +149,13 @@ main .titre_menu .icon-coeur:hover .heart-two {
           animation-delay: 2s;
 }
 
+.box9 {
+  -webkit-animation: show-smooth 1s linear;
+          animation: show-smooth 1s linear;
+  -webkit-animation-delay: 2.25s;
+          animation-delay: 2.25s;
+}
+
 .box {
   background-color: white;
   border-radius: 15px;
