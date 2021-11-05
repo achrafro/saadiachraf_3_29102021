@@ -20,6 +20,116 @@ a:visited, a:link, a:active {
   color: black;
 }
 
+main {
+  opacity: 0;
+  -webkit-animation-name: mainfade;
+          animation-name: mainfade;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes mainfade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes mainfade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.load {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 2s;
+  transition: 2s;
+  background-color: white;
+  -webkit-animation-name: loadfadeout;
+          animation-name: loadfadeout;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes loadfadeout {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes loadfadeout {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.load .loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #9356DC;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 3s;
+          animation: spin 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: rotate(3360deg);
+            transform: rotate(3360deg);
+    visibility: hidden;
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: rotate(3360deg);
+            transform: rotate(3360deg);
+    visibility: hidden;
+  }
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -138,10 +248,10 @@ header .emplacement {
 }
 
 .reservation-menu .btn:hover {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background-image: linear-gradient(#FF79DA, #9356DC);
   -webkit-box-shadow: 5px 9px 11px 6px #b2b2b2;
           box-shadow: 5px 9px 11px 6px #b2b2b2;
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
 }
 
 .fonctionnement {
@@ -436,5 +546,9 @@ footer .titre-site {
 
 footer .footer-item {
   padding-bottom: 15px;
+}
+
+footer .contact {
+  color: white !important;
 }
 /*# sourceMappingURL=style.css.map */

@@ -13,8 +13,7 @@ body {
 margin: 0;
 box-sizing: border-box;
 overflow-x: hidden;
-
- }
+  }
  
 
 h1, h2, h3, h4, h5, h6, p,a {
@@ -25,6 +24,57 @@ text-decoration: none;
 }
 a:visited ,a:link,a:active {
 color: black;
+}
+//main 
+main {
+    opacity: 0;
+    animation-name: mainfade;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+
+    @keyframes mainfade {
+        from {opacity: 0;
+          }
+          to { opacity: 1;}
+}}
+
+// LOADER animation
+.load {   
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+    background-color: white;
+    animation-name: loadfadeout;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+    @keyframes loadfadeout {
+from {opacity: 0;}
+to { opacity: 1;}        
+    }
+ 
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid $coleur-primaire;
+    width: 120px;
+    height: 120px;
+    animation: spin 3s ;
+    animation-fill-mode: forwards;
+
+   
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); visibility: visible; }
+    100% { transform: rotate(3360deg); visibility: hidden; 
+         }
+   }
+
 }
 // Header //
 header {
@@ -116,9 +166,8 @@ padding: 10px;
     cursor: pointer;
     margin-bottom:25px;
     &:hover {
-        background-image: linear-gradient(#FF79DA,#9356DC);
-        box-shadow: 5px 9px 11px 6px #b2b2b2;
-
+         box-shadow: 5px 9px 11px 6px #b2b2b2;
+         filter: brightness(1.1);
 
     }
 
@@ -350,11 +399,16 @@ padding-bottom:35px ;
 font-size: 20px;
 font-family: $font-texte;
 
+
 .titre-site {
     font-family: $font-logo-titres;
     font-size: 28px;
     padding-bottom: 20px;
 }
 .footer-item { 
-padding-bottom:15px ; }
+padding-bottom:15px ;
+ }
+ .contact {
+    color: white!important;
+ }
 }

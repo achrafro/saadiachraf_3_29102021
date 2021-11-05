@@ -321,6 +321,8 @@ main .titre_menu .icon-coeur:hover .heart-two {
 
 .btn:hover {
   cursor: pointer;
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
 }
 
 .btn1 {
