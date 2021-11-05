@@ -27,11 +27,12 @@ header {
 
 header .titre_site {
   font-family: "Shrikhand", cursive;
-  font-size: 10vw;
+  font-size: 30px;
+  text-align: center;
 }
 
 header .fa-arrow-left {
-  font-size: 9vw;
+  font-size: 30px;
   padding-left: 15px;
 }
 
@@ -42,6 +43,13 @@ header .fa-arrow-left {
   padding-top: 21px;
 }
 
+@media screen and (min-width: 768px) {
+  .photo_de_resto img {
+    opacity: 0.5;
+    height: 320px;
+  }
+}
+
 main {
   background-color: #eee;
   border-top-left-radius: 25px;
@@ -49,6 +57,14 @@ main {
   padding: 15px 15px;
   position: relative;
   top: -63px;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
 }
 
 main .titre_menu {

@@ -314,6 +314,9 @@ header .emplacement {
     -ms-grid-row-span: 1;
     grid-row: 3/4;
   }
+  .list-restaurents img {
+    height: 200px;
+  }
 }
 
 .list-restaurents .titre-restaurent {
@@ -343,6 +346,7 @@ header .emplacement {
 
 .list-restaurents .box img {
   width: 100%;
+  height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
   border-top-left-radius: 15px;

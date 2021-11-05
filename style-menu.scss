@@ -24,11 +24,12 @@ header {
 
    .titre_site {
     font-family: $font-logo-titres;
-    font-size: 10vw;
+    font-size: 30px;
+    text-align: center;
    
     }
 .fa-arrow-left{
-    font-size:9vw;
+    font-size:30px;
     padding-left: 15px;
  }
 }
@@ -37,6 +38,12 @@ header {
     width: 100%;
     object-fit: cover;
     padding-top: 21px;
+    @media screen and (min-width:768px) {
+  
+        opacity: 0.5;
+        height: 320px;
+     
+    }
 }
 
 // MAIN //
@@ -47,6 +54,12 @@ border-top-right-radius: 25px;
 padding: 15px 15px;
 position: relative;
 top : -63px;
+
+@media screen and (min-width:768px) {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
 
 .titre_menu {
      font-family: $font-logo-titres;  
