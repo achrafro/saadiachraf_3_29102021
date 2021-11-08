@@ -367,4 +367,8 @@ footer .titre-site {
 footer .footer-item {
   padding-bottom: 15px;
 }
+
+.hide {
+  display: none;
+}
 /*# sourceMappingURL=style-menu.css.map */

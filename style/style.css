@@ -384,7 +384,6 @@ header .emplacement {
     display: grid;
     -ms-grid-columns: 1FR 1FR;
         grid-template-columns: 1FR 1FR;
-    grid-row: 1FR 1FR 1FR;
     justify-items: center;
   }
   .list-restaurents .titre-restaurent {
