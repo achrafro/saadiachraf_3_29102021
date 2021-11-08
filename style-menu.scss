@@ -167,9 +167,11 @@ margin-top: 15px;
         right: 0;
         transform: scale(1,1);
         transition: all .5s;
-        .fa-check-circle {
+        .fa-circle-check {
+            color: white;
             visibility: hidden;
-             }
+        }
+         
             
          }
 
@@ -183,10 +185,11 @@ margin-top: 15px;
         .box-vert  {  
             transform: scale(1,1);
             width: 30%;}
-            .fa-check-circle {
+            .fa-circle-check {
                 visibility: visible;
                 transition: .5s;
                 transform: rotate(380deg);
+                color: white;
             }
                 
     } 

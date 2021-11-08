@@ -270,7 +270,8 @@ main .titre_menu .icon-coeur:hover .heart-two {
   transition: all .5s;
 }
 
-.box .box-vert .fa-check-circle {
+.box .box-vert .fa-circle-check {
+  color: white;
   visibility: hidden;
 }
 
@@ -296,12 +297,13 @@ main .titre_menu .icon-coeur:hover .heart-two {
   width: 30%;
 }
 
-.box:hover .fa-check-circle {
+.box:hover .fa-circle-check {
   visibility: visible;
   -webkit-transition: .5s;
   transition: .5s;
   -webkit-transform: rotate(380deg);
           transform: rotate(380deg);
+  color: white;
 }
 
 .btn {
