@@ -226,20 +226,49 @@ font-weight: 700;
         }
 
     }
-    .btn-fnct::before {
-        content: "1";
-        background-color: $coleur-primaire;
-        border-radius: 5555px;
-        width: 35px;
-        height:35px;
-        display: inline-block;
-        color: white;
-        position :absolute;
-        top:25px;
-        left: -15px;
-        text-align: center;
-        line-height: 38px;
-            }
+.btn-fnct:nth-child(2)::before {
+content: '1';
+background-color: $coleur-primaire;
+border-radius: 5555px;
+width: 35px;
+height:35px;
+display: inline-block;
+color: white;
+position :absolute;
+top:25px;
+left: -15px;
+text-align: center;
+line-height: 38px;
+}
+
+.btn-fnct:nth-child(3)::before {
+content: '2';
+background-color: $coleur-primaire;
+border-radius: 5555px;
+width: 35px;
+height:35px;
+display: inline-block;
+color: white;
+position :absolute;
+top:25px;
+left: -15px;
+text-align: center;
+line-height: 38px;
+}
+.btn-fnct:nth-child(4)::before {
+content: '3';
+background-color: $coleur-primaire;
+border-radius: 5555px;
+width: 35px;
+height:35px;
+display: inline-block;
+color: white;
+position :absolute;
+top:25px;
+left: -15px;
+text-align: center;
+line-height: 38px;
+}
         }
 
 // LISTE DES RESTAURENTS //

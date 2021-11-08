@@ -316,8 +316,38 @@ header .emplacement {
   color: #9356DC;
 }
 
-.fonctionnement .btn-fnct::before {
-  content: "1";
+.fonctionnement .btn-fnct:nth-child(2)::before {
+  content: '1';
+  background-color: #9356DC;
+  border-radius: 5555px;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  color: white;
+  position: absolute;
+  top: 25px;
+  left: -15px;
+  text-align: center;
+  line-height: 38px;
+}
+
+.fonctionnement .btn-fnct:nth-child(3)::before {
+  content: '2';
+  background-color: #9356DC;
+  border-radius: 5555px;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  color: white;
+  position: absolute;
+  top: 25px;
+  left: -15px;
+  text-align: center;
+  line-height: 38px;
+}
+
+.fonctionnement .btn-fnct:nth-child(4)::before {
+  content: '3';
   background-color: #9356DC;
   border-radius: 5555px;
   width: 35px;
