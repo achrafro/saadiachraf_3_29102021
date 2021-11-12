@@ -29,8 +29,8 @@ color: black;
 main {
     opacity: 0;
     animation-name: mainfade;
-    animation-duration: 2s;
-    animation-delay: 3s;
+    animation-duration: 1s;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
 
     @keyframes mainfade {
@@ -47,34 +47,21 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 2s;
     background-color: white;
-    animation-name: loadfadeout;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-
-    @keyframes loadfadeout {
-from {opacity: 0;}
-to { opacity: 1;}        
-    }
- 
 .loader {
     border: 16px solid #f3f3f3;
     border-radius: 50%;
     border-top: 16px solid $coleur-primaire;
     width: 120px;
     height: 120px;
-    animation: spin 3s ;
+    animation: spin 1s ;
     animation-fill-mode: forwards;
- 
-   
   }
   @keyframes spin {
     0% { transform: rotate(0deg); visibility: visible; }
     100% { transform: rotate(3360deg); visibility: hidden; 
          }
    }
-
 }
 // Header //
 header {
