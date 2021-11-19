@@ -105,7 +105,9 @@ margin-top: 15px;
 @for $i from 1 to 10 {
     .box#{$i} {
         animation: show-smooth 1s linear;
-        animation-delay: $i * 0.25s; }
+        animation-delay: $i * 0.25s;
+ 
+     }
   }
  .box {
     background-color: white;
@@ -120,15 +122,23 @@ margin-top: 15px;
     grid-template-columns: 60% 10% 10% 20%;
     grid-template-rows: 50% 50%;
     position: relative;
-     opacity: 0;
-     animation-fill-mode: forwards;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    
+  
+    
+
 
     @keyframes show-smooth {
         from {
             opacity: 0;
+            transform: translateY(10px);
+
         }
         to {
             opacity: 1;
+            transform: translateY(0px);
+
         }
     }
     .box h3 {

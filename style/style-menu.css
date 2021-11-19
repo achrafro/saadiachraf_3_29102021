@@ -202,18 +202,26 @@ main .titre_menu .icon-coeur:hover .heart-two {
 @-webkit-keyframes show-smooth {
   from {
     opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
   }
   to {
     opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 
 @keyframes show-smooth {
   from {
     opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
   }
   to {
     opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 

@@ -26,13 +26,13 @@ a:visited ,a:link,a:active {
 color: black;
 }
 //main 
-main {
+main , header , footer {
     opacity: 0;
     animation-name: mainfade;
     animation-duration: 1s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
-
+ 
     @keyframes mainfade {
         from {opacity: 0;
           }
@@ -56,7 +56,7 @@ main {
     height: 120px;
     animation: spin 1s ;
     animation-fill-mode: forwards;
-  }
+   }
   @keyframes spin {
     0% { transform: rotate(0deg); visibility: visible; }
     100% { transform: rotate(3360deg); visibility: hidden; 
@@ -165,6 +165,8 @@ padding: 10px;
 .fonctionnement {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     font-family: $font-texte;
     padding:10%;
     flex-wrap:wrap;
@@ -193,8 +195,8 @@ padding: 10px;
         cursor: pointer;
         display: flex;
         align-items: center;
-         position: relative;
-        max-width: 500px;
+        position: relative;
+        width: 500px;
         align-content: center;
      
         .etape {
